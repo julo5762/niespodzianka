@@ -112,14 +112,14 @@
 
     <!-- EKRAN 3: Wybór Terminu -->
     <div id="screen3" class="screen">
-        <h2>Wybierz Termin</h2>
-        <p>Kiedy wyruszasz na misję?</p>
+        <h2>Wybierz date naszego romantycznego pysznego wyjścia</h2>
+        <p>Prosze o zaznaczenia preferowanej opcji?</p>
         
         <div class="calendar-grid">
-            <div class="day-card" onclick="selectDay(this, 'Piątek')">Piątek</div>
-            <div class="day-card" onclick="selectDay(this, 'Sobota')">Sobota</div>
             <div class="day-card" onclick="selectDay(this, 'Niedziela')">Niedziela</div>
-            <div class="day-card" onclick="selectDay(this, 'Poniedziałek')">Poniedziałek</div>
+            <div class="day-card" onclick="selectDay(this, 'Wtorek')">Wtorek</div>
+            <div class="day-card" onclick="selectDay(this, 'Czwartek')">Czwartek</div>
+            <div class="day-card" onclick="selectDay(this, 'Piątek')">Piątek</div>
         </div>
 
         <button class="btn" style="margin-top:20px;" onclick="finishQuest()">Zatwierdź Wybór</button>
@@ -127,8 +127,8 @@
 
     <!-- EKRAN 4: Podsumowanie -->
     <div id="screen4" class="screen">
-        <h1>Quest Zaakceptowany!</h1>
-        <p>Oficjalny plan misji:</p>
+        <h1>Randka potwirdzona</h1>
+        <p>Dobrze, podsumowanie:</p>
         <p>📍 <b>Miejsce:</b> <span id="summary-rest">-</span></p>
         <p>📅 <b>Dzień:</b> <span id="summary-day">-</span></p>
         <p>Do zobaczenia! ❤️</p>
