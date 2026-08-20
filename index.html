@@ -164,8 +164,23 @@
             alert('Wybierz dzień!');
             return;
         }
+
+        // Wyświetlenie podsumowania na ekranie
         document.getElementById('summary-rest').innerText = choices.restaurant;
         document.getElementById('summary-day').innerText = choices.day;
+        
+        // WYSYŁANIE DANYCH NA E-MAIL
+        fetch("https://formspree.io/f/TUTAJ_WKLEJ_SWOJ_ID", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                restauracja: choices.restaurant,
+                dzien: choices.day
+            })
+        });
+
         nextScreen(4);
     }
 </script>
